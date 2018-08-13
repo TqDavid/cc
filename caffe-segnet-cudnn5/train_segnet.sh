@@ -1,0 +1,2 @@
+#bin/sh
+./build/tools/caffe train -gpu 2,3 -solver examples/segnet/segnet_solver.prototxt -weights examples/segnet/segnet_train/premodel/segnet_basic_camvid.caffemodel # This will begin training SegNet-Basic on GPU 0

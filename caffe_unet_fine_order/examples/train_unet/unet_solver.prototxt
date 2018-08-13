@@ -1,0 +1,20 @@
+net: "examples/train_unet/unet_train_val.prototxt"
+#test_iter: 100
+#test_interval: 10000
+display: 1000
+#lr_policy: "fixed"
+#base_lr: 0.001
+
+base_lr: 0.03 #0.02
+lr_policy: "step"
+gamma: 0.5
+stepsize: 15000
+
+momentum: 0.9
+iter_size: 1
+max_iter: 500000
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "examples/train_unet/snapshots_unet/unet"
+#test_initialization: false
+#test_iter: 10
